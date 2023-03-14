@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:xo_game/view/screens/home.dart';
 
 void main() {
   runApp(
@@ -14,21 +15,6 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('XO Game'),
-      ),
-      body: const Text('XO Game'),
     );
   }
 }
