@@ -29,7 +29,8 @@ class HomeScreen extends StatelessWidget {
                   crossAxisSpacing: 15.0,
                 ),
                 itemBuilder: (context, index) {
-                  return const BoxItem(letter: 'X');
+                  return BoxItem(
+                      letter: provider2.answers[index].name, n: index);
                 },
               ),
             ),
