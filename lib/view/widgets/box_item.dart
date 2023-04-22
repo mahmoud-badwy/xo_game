@@ -6,14 +6,12 @@ class BoxItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * (1 / 3.5),
-      height: MediaQuery.of(context).size.width * (1 / 3.5),
-      decoration: BoxDecoration(
+    return MaterialButton(
+      color: Colors.red,
+      shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
-        color: Colors.red,
       ),
-      alignment: Alignment.center,
+      onPressed: () {},
       child: Text(
         letter,
         style: const TextStyle(
